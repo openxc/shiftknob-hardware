@@ -10524,6 +10524,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="251.46" y1="144.78" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
 <label x="251.46" y="144.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="P+2" gate="G$1" pin="3.3V"/>
+<wire x1="119.38" y1="71.12" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="AREF" class="0">
 <segment>
@@ -10927,13 +10932,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="129.54" y1="78.74" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="Q6" gate="G$1" pin="G"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="P+2" gate="G$1" pin="3.3V"/>
-<wire x1="119.38" y1="71.12" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
