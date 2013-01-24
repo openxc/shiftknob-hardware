@@ -10188,6 +10188,38 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC2">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="VCC2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10264,7 +10296,7 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="D2" library="diode" deviceset="MBR0520LT" device=""/>
-<part name="VUSB" library="SparkFun" deviceset="3.3V" device="" value="VUSB"/>
+<part name="VUSB" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="VUSB"/>
 <part name="VCC4" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 </parts>
 <sheets>
@@ -10384,7 +10416,7 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 <attribute name="VALUE" x="125.73" y="61.722" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D2" gate="G$1" x="149.86" y="187.96" rot="MR0"/>
-<instance part="VUSB" gate="G$1" x="157.48" y="193.04" rot="MR0"/>
+<instance part="VUSB" gate="1" x="157.48" y="193.04" rot="MR0"/>
 <instance part="VCC4" gate="G$1" x="139.7" y="193.04" rot="MR0"/>
 </instances>
 <busses>
@@ -11009,12 +11041,35 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="187.96" x2="157.48" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="187.96" x2="157.48" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="VUSB" gate="G$1" pin="3.3V"/>
+<pinref part="VUSB" gate="1" pin="VCC"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,30.48,147.32,3.3V,VCC,,,,"/>
+<approved hash="102,1,38.1,86.36,3.3V,VCC,,,,"/>
+<approved hash="102,1,48.26,134.62,3.3V,VCC,,,,"/>
+<approved hash="102,1,104.14,198.12,3.3V,VCC,,,,"/>
+<approved hash="102,1,144.78,157.48,3.3V,VCC,,,,"/>
+<approved hash="102,1,143.51,120.65,3.3V,VCC,,,,"/>
+<approved hash="102,1,119.38,71.12,3.3V,VCC,,,,"/>
+<approved hash="102,1,157.48,193.04,VCC,VUSB,,,,"/>
+<approved hash="102,1,139.7,193.04,3.3V,VCC,,,,"/>
+<approved hash="106,1,99.06,132.08,A0,,,,,"/>
+<approved hash="106,1,99.06,129.54,A1,,,,,"/>
+<approved hash="106,1,99.06,127,A2,,,,,"/>
+<approved hash="106,1,99.06,124.46,A3,,,,,"/>
+<approved hash="106,1,99.06,121.92,A4,,,,,"/>
+<approved hash="106,1,99.06,119.38,A5,,,,,"/>
+<approved hash="106,1,99.06,116.84,A6,,,,,"/>
+<approved hash="106,1,99.06,114.3,A7,,,,,"/>
+<approved hash="106,1,99.06,104.14,D2,,,,,"/>
+<approved hash="106,1,99.06,101.6,D3,,,,,"/>
+<approved hash="106,1,99.06,73.66,D13,,,,,"/>
+<approved hash="115,1,139.596,107.846,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
