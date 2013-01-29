@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -1253,6 +1253,8 @@ LED</text>
 <rectangle x1="20.5765" y1="6.6319" x2="22.4053" y2="6.6573" layer="21"/>
 <rectangle x1="20.7543" y1="6.6573" x2="22.2021" y2="6.6827" layer="21"/>
 <rectangle x1="21.1607" y1="6.6827" x2="21.7957" y2="6.7081" layer="21"/>
+<wire x1="30.2006" y1="13.8684" x2="32.6644" y2="13.8684" width="0.4064" layer="22"/>
+<wire x1="18.0086" y1="7.2898" x2="18.0086" y2="9.1186" width="0.4064" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -1687,21 +1689,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="SMA-DIODE">
-<description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
-Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140</description>
-<wire x1="-2.3" y1="1" x2="-2.3" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="1.45" x2="2.3" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="2.3" y1="1.45" x2="2.3" y2="1" width="0.2032" layer="21"/>
-<wire x1="2.3" y1="-1" x2="2.3" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="2.3" y1="-1.45" x2="-2.3" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="-1.45" x2="-2.3" y2="-1" width="0.2032" layer="21"/>
-<wire x1="1" y1="1" x2="1" y2="-1" width="0.2032" layer="21"/>
-<smd name="A" x="-2.15" y="0" dx="1.27" dy="1.47" layer="1" rot="R180"/>
-<smd name="C" x="2.15" y="0" dx="1.27" dy="1.47" layer="1"/>
-<text x="-2.286" y="1.651" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0.254" y="1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 </library>
 <library name="SparkFun-Passives">
@@ -1971,9 +1958,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="JP4" library="SparkFun-Connectors" package="JST-2-SMD" value="PWM Motor Connection" x="21.529" y="10.353" rot="MR270">
 <attribute name="PROD_ID" value="CONN-08352" x="21.529" y="10.353" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="D1" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="MBRA140" x="17.592" y="8.448">
-<attribute name="PROD_ID" value="DIO-08053" x="17.592" y="8.448" size="1.778" layer="27" display="off"/>
-</element>
+<element name="D1" library="diode" package="SOD123" value="MBR0520LT" x="17.2314" y="8.2144" rot="R180"/>
 <element name="LED1" library="SparkFun" package="LED-TRICOLOR-SMD" value="LED-TRICOLOR" x="29.022" y="8.956" rot="R300"/>
 <element name="R6" library="SparkFun-Resistors" package="0805" value="50" x="15.306" y="13.02" rot="R180"/>
 <element name="R10" library="SparkFun-Resistors" package="0805" value="100" x="19.624" y="12.004"/>
@@ -2051,9 +2036,9 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="23.053" y1="34.6676875" x2="23.7896" y2="35.4736" width="0.254" layer="1"/>
 <wire x1="23.7896" y1="35.4736" x2="24.196" y2="35.118" width="0.254" layer="1"/>
 <wire x1="24.196" y1="35.118" x2="24.704" y2="35.626" width="0.254" layer="1"/>
-<via x="16.703" y="7.813" extent="1-16" drill="0.5"/>
-<via x="17.338" y="8.575" extent="1-16" drill="0.5"/>
-<via x="17.973" y="9.337" extent="1-16" drill="0.5"/>
+<via x="16.8554" y="6.9748" extent="1-16" drill="0.5"/>
+<via x="17.1348" y="8.1178" extent="1-16" drill="0.5"/>
+<via x="17.5666" y="9.2862" extent="1-16" drill="0.5"/>
 <wire x1="23.888853125" y1="33.367796875" x2="23.35305625" y2="32.832" width="0.3048" layer="1"/>
 <wire x1="23.35305625" y1="32.832" x2="21.021" y2="32.832" width="0.3048" layer="1"/>
 <via x="19.624" y="20.64" extent="1-16" drill="0.5"/>
@@ -2577,13 +2562,13 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="Q2" pad="2"/>
 <contactref element="JP4" pad="2"/>
 <contactref element="D1" pad="C"/>
-<wire x1="19.742" y1="8.448" x2="22.754" y2="8.448" width="0.6096" layer="1"/>
-<wire x1="22.754" y1="8.448" x2="23.754" y2="9.448" width="0.6096" layer="1"/>
+<wire x1="19.1314" y1="8.2144" x2="22.9572" y2="8.2194" width="0.6096" layer="1"/>
+<wire x1="22.9572" y1="8.2194" x2="23.754" y2="9.448" width="0.6096" layer="1"/>
 <wire x1="25.229" y1="9.353" x2="24.72" y2="9.353" width="0.6096" layer="16"/>
 <wire x1="24.72" y1="9.353" x2="22.926" y2="7.559" width="0.6096" layer="16"/>
 <via x="22.926" y="7.559" extent="1-16" drill="0.5" diameter="0.4064"/>
 <wire x1="22.926" y1="7.559" x2="22.926" y2="8.276" width="0.6096" layer="1"/>
-<wire x1="22.926" y1="8.276" x2="22.754" y2="8.448" width="0.6096" layer="1"/>
+<wire x1="22.926" y1="8.276" x2="22.9572" y2="8.2194" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="LED1" pad="B"/>
