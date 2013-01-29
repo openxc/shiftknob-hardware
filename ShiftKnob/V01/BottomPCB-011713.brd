@@ -682,7 +682,7 @@ LED</text>
 <rectangle x1="15.3441" y1="22.3545" x2="16.7919" y2="22.3799" layer="22" rot="R90"/>
 <rectangle x1="15.7759" y1="22.3545" x2="16.4109" y2="22.3799" layer="22" rot="R90"/>
 <text x="20.386" y="24.577" size="0.8128" layer="21">BUT</text>
-<text x="12.893" y="12.004" size="0.8128" layer="21" rot="R270">3x50Ω</text>
+<text x="12.893" y="12.004" size="0.8128" layer="21" rot="R270">3x51Ω</text>
 <text x="17.465" y="15.687" size="0.8128" layer="21" rot="R270">3x100Ω</text>
 <text x="22.672" y="15.814" size="0.8128" layer="21" rot="R270">3x100Ω</text>
 <wire x1="15.24" y1="39.37" x2="27.94" y2="39.37" width="0.2032" layer="20" curve="-39.307648"/>
@@ -2195,8 +2195,8 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="19.685" y1="24.13" x2="20.005" y2="24.577" width="0.254" layer="1"/>
 <wire x1="20.005" y1="24.577" x2="20.005" y2="26.99" width="0.254" layer="1"/>
 <wire x1="18.6334" y1="19.3192" x2="18.6334" y2="17.9984" width="0.254" layer="16"/>
-<wire x1="18.6334" y1="19.3192" x2="17.9984" y2="19.9542" width="0.254" layer="1"/>
-<wire x1="17.9984" y1="19.9542" x2="18.1" y2="22.672" width="0.254" layer="1"/>
+<wire x1="18.6334" y1="19.3192" x2="18.1" y2="19.878" width="0.254" layer="1"/>
+<wire x1="18.1" y1="19.878" x2="18.1" y2="22.672" width="0.254" layer="1"/>
 <wire x1="18.1" y1="22.672" x2="19.558" y2="24.13" width="0.254" layer="1"/>
 <wire x1="19.558" y1="24.13" x2="19.685" y2="24.13" width="0.254" layer="1"/>
 <wire x1="18.6334" y1="19.3192" x2="18.928" y2="19.05" width="0.254" layer="1"/>

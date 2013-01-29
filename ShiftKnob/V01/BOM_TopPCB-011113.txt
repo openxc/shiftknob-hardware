@@ -1,9 +1,0 @@
-Partlist exported from C:/cygwin/home/znelson1/projects/shiftknob-schematics/ShiftKnob/V01/TopPCB-011113.sch at 1/28/2013 11:59:41 AM
-
-Part     Value                    Device                   Package         Description                          
-7SEGMENT 7-SEGMENT-DISPLAY-1"-RED 7-SEGMENT-DISPLAY-1"-RED 7-SEGMENT-1"PTH 7-Segment Display 1" Red (COM-08546) 
-ARRAY1   220                      744-8                    744-8           CTS 744 Series                       
-ARRAY2   220                      744-8                    744-8           CTS 744 Series                       
-C1       0.1uF                    CAP0402-CAP              0402-CAP        Capacitor                            
-JP1      6 PIN 90degree Header    M06POGOPIN_HOLES_ONLY    1X06_HOLES_ONLY Header 6                             
-SHIFT1   74HC595D                 74HC595D                 SO16            8-bit SHIFT REGISTER, output latch   
