@@ -1,6 +1,6 @@
 change order for BottomPCB_V01:
 - button input pin to atmega328 should go to pin 2 or 3 for interrupt. 
-
+- remove pullup resistor and 5V connection on button. use internal pull-up resistor in atmega328
 
 
 change order for TopPCB_V01:
