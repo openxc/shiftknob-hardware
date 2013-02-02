@@ -1,0 +1,6 @@
+change order for BottomPCB_V01:
+- button input pin to atmega328 should go to pin 2 or 3 for interrupt. 
+
+
+
+change order for TopPCB_V01:
