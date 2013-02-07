@@ -1,6 +1,7 @@
 change order for BottomPCB_V01:
-- button input pin to atmega328 should go to pin 2 or 3 for interrupt. 
-- remove pullup resistor and 5V connection on button. use internal pull-up resistor in atmega328
-
+DONE - button input pin to atmega328 should go to pin 2 or 3 for interrupt. 
+DONE - remove pullup resistor and 5V connection on button. use internal pull-up resistor in atmega328
+DONE - change outer profile trace width to .010" to clear BatchPCB DRC check
 
 change order for TopPCB_V01:
+DONE - change outer profile trace width to .010" to clear BatchPCB DRC check
