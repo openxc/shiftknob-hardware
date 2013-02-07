@@ -104,7 +104,7 @@
 </layers>
 <board>
 <plain>
-<circle x="17.78" y="17.78" radius="16.5" width="0.2032" layer="20"/>
+<circle x="17.78" y="17.78" radius="16.5" width="0.254" layer="20"/>
 <text x="27.051" y="20.2946" size="1.6764" layer="21" rot="R270">znelson1</text>
 <text x="29.3878" y="21.0312" size="1.6764" layer="21" rot="R270">01-28-13</text>
 <rectangle x1="29.2862" y1="23.5458" x2="29.8958" y2="23.5712" layer="21" rot="R90"/>
