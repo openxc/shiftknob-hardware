@@ -106,7 +106,7 @@
 <plain>
 <circle x="17.78" y="17.78" radius="16.5" width="0.254" layer="20"/>
 <text x="27.051" y="20.2946" size="1.6764" layer="21" rot="R270">znelson1</text>
-<text x="29.3878" y="21.0312" size="1.6764" layer="21" rot="R270">01-28-13</text>
+<text x="29.3878" y="21.0312" size="1.6764" layer="21" rot="R270">2-07-13</text>
 <rectangle x1="29.2862" y1="23.5458" x2="29.8958" y2="23.5712" layer="21" rot="R90"/>
 <rectangle x1="28.8671" y1="23.5331" x2="30.2641" y2="23.5585" layer="21" rot="R90"/>
 <rectangle x1="28.6385" y1="23.5331" x2="30.4419" y2="23.5585" layer="21" rot="R90"/>
@@ -678,7 +678,7 @@
 <text x="13.3604" y="11.5824" size="0.8128" layer="21" font="vector">SHIFT1</text>
 <text x="3.1496" y="17.145" size="0.8128" layer="21" font="vector" rot="R90">C1 </text>
 <text x="29.9212" y="21.082" size="1.778" layer="22" rot="MR270">znelson1</text>
-<text x="27.0002" y="21.1074" size="1.778" layer="22" rot="MR270">01-28-13</text>
+<text x="27.0002" y="21.1074" size="1.778" layer="22" rot="MR270">2-07-13</text>
 <rectangle x1="28.2448" y1="24.003" x2="28.8544" y2="24.0284" layer="22" rot="R90"/>
 <rectangle x1="27.8765" y1="23.9903" x2="29.2735" y2="24.0157" layer="22" rot="R90"/>
 <rectangle x1="27.6987" y1="23.9903" x2="29.5021" y2="24.0157" layer="22" rot="R90"/>
@@ -1732,7 +1732,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="SHIFT1" pad="13"/>
 <contactref element="C1" pad="2"/>
 <contactref element="JP1" pad="2"/>
-<polygon width="0.6096" layer="1" isolate="0.4064">
+<polygon width="0.254" layer="1" isolate="0.4064">
 <vertex x="2.54" y="17.6022" curve="-90"/>
 <vertex x="17.7038" y="33.1978"/>
 <vertex x="18.0594" y="33.147" curve="-90"/>

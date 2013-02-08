@@ -339,29 +339,10 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.3.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.3.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.3.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.3.0/lbr/zilog.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Library/SparkFun.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Library/LilyPad-Wearables.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/LilyPad-Wearables.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Aesthetics.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-AnalogIC.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Boards.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Capacitors.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Connectors.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-DigitalIC.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-DiscreteSemi.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Displays.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Electromechanical.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-FreqCtrl.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-LED.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Passives.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-PowerIC.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Resistors.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
-UsedLibrary="C:/cygwin/home/znelson1/eagle_libraries/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="492 231 1091 630"
+Loc="412 231 1011 630"
 State=0
 Number=2
 File="V01/BottomPCB-011713.sch"
@@ -406,6 +387,6 @@ State=2
 Number=0
 
 [Desktop]
-Screen="3200 900"
+Screen="1440 900"
 Window="Win_1"
 Window="Win_2"
