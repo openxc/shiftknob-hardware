@@ -1,7 +1,7 @@
 Screaming Circuits SMD component position file.
 Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
 
-Centroid Data for pc board: "BottomPCB-011713.brd" as of: 2/7/2013 4:10:08 PM
+Centroid Data for pc board: "BottomPCB-011713.brd" as of: 2/14/2013 11:19:02 AM
 Measurements are in inches. Comma delimited
 Only surface mount components included
 
@@ -12,7 +12,7 @@ C3,Top,1.073,1.233,45
 C4,Top,1.268,1.028,270
 C5,Top,1.058,0.993,270
 C6,Top,1.008,0.823,90
-D1,Top,0.650,0.324,180
+D1,Top,0.724,0.301,180
 D2,Bottom,1.258,0.439,135
 IC2,Top,1.193,0.698,180
 JP3,Bottom,1.152,0.769,180
@@ -22,8 +22,8 @@ LED2,Top,1.133,1.353,240
 LED3,Top,0.273,0.853,0
 LED4,Top,1.158,1.058,0
 Q1,Top,0.968,1.456,345
-Q2,Top,0.973,0.333,180
-Q3,Top,0.453,1.268,225
+Q2,Top,0.965,0.328,0
+Q3,Top,0.458,1.270,45
 Q4,Top,0.603,0.683,270
 Q5,Top,0.603,0.813,270
 Q6,Top,0.603,0.943,270
