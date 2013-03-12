@@ -1,8 +1,8 @@
 .DS_Store
 *~
 *.o
-*.b#*
 *.s#*
+*.b#*
 target
 bin
 gen
