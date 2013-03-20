@@ -687,9 +687,9 @@ LED</text>
 <rectangle x1="15.3441" y1="22.3545" x2="16.7919" y2="22.3799" layer="22" rot="R90"/>
 <rectangle x1="15.7759" y1="22.3545" x2="16.4109" y2="22.3799" layer="22" rot="R90"/>
 <text x="20.386" y="24.577" size="0.8128" layer="21">BUT</text>
-<text x="12.893" y="12.004" size="0.8128" layer="21" rot="R270">3x51Ω</text>
-<text x="17.465" y="15.687" size="0.8128" layer="21" rot="R270">3x100Ω</text>
-<text x="22.672" y="15.814" size="0.8128" layer="21" rot="R270">3x100Ω</text>
+<text x="12.893" y="12.004" size="0.8128" layer="21" rot="R270">3x100Ω</text>
+<text x="17.211" y="15.687" size="0.8128" layer="21" rot="R270">3x100Ω</text>
+<text x="22.418" y="15.814" size="0.8128" layer="21" rot="R270">3x100Ω</text>
 <rectangle x1="21.1861" y1="4.2697" x2="21.7957" y2="4.2951" layer="21"/>
 <rectangle x1="20.7797" y1="4.2951" x2="22.1767" y2="4.3205" layer="21"/>
 <rectangle x1="20.5765" y1="4.3205" x2="22.3799" y2="4.3459" layer="21"/>
@@ -3920,9 +3920,9 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="R1" library="SparkFun" package="0402-RES" value="10K" x="29.276" y="23.688" rot="R270"/>
 <element name="LED4" library="SparkFun" package="LED-0603" value="Red" x="29.403" y="26.863"/>
 <element name="R4" library="SparkFun-Resistors" package="0805" value="100" x="19.624" y="13.782"/>
-<element name="R3" library="SparkFun-Resistors" package="0805" value="50" x="15.306" y="14.798" rot="R180"/>
+<element name="R3" library="SparkFun-Resistors" package="0805" value="100" x="15.306" y="14.798" rot="R180"/>
 <element name="R5" library="SparkFun-Resistors" package="0805" value="100" x="24.831" y="15.56"/>
-<element name="R7" library="SparkFun-Resistors" package="0805" value="50" x="15.306" y="11.242" rot="R180"/>
+<element name="R7" library="SparkFun-Resistors" package="0805" value="100" x="15.306" y="11.242" rot="R180"/>
 <element name="R8" library="SparkFun-Resistors" package="0805" value="100" x="19.624" y="15.56"/>
 <element name="R9" library="SparkFun-Resistors" package="0805" value="100" x="24.831" y="12.004"/>
 <element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-NCHANNELSMD" x="24.5212" y="8.3414"/>
@@ -3932,7 +3932,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="D1" library="diode" package="SOD123" value="MBR0520LT" x="18.3998" y="7.6556" rot="R180"/>
 <element name="LED1" library="SparkFun" package="LED-TRICOLOR-SMD" value="LED-TRICOLOR" x="29.022" y="8.956" rot="R300"/>
-<element name="R6" library="SparkFun-Resistors" package="0805" value="50" x="15.306" y="13.02" rot="R180"/>
+<element name="R6" library="SparkFun-Resistors" package="0805" value="100" x="15.306" y="13.02" rot="R180"/>
 <element name="R10" library="SparkFun-Resistors" package="0805" value="100" x="19.624" y="12.004"/>
 <element name="R11" library="SparkFun-Resistors" package="0805" value="100" x="24.831" y="13.782"/>
 <element name="Q4" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-NCHANNELSMD" x="15.306" y="17.338" rot="R270"/>
