@@ -1,22 +1,37 @@
 change order for BottomPCB_V01:
 
 1. add bootloader programming pins to be used with 
-   ICSP programmer (6 pin ICSP header)
+   ICSP programmer (6 pin ICSP header) - ADDED TO SCHEMATIC
+
+5. add FTDI chip to bottom of the board
+  c. place chip on board after making space
+
+6. add vertical USB connector to FTDI chip - ADDED TO SCHEMATIC
+
+7. double check all capacitors and remove redundancies
+
+8. is 12V connection really needed? Is Host-device power 
+   enough? (possibly remove connector and 7805)
+
+9. use right-angle RGB LEDs rather than surface mount ones -
+   this will better shine light to the outside of the shift knob
+   housing
+   
+change order for TopPCB_V01:
+NONE
+
+
+
+Completed Changes:
+
 2. silkscreen for motor diode is backwards
+
 3. 50ohm resistors on Red led of RGBs should be bumped 
    up to 100ohm
+
 4. remove the power LED and resistor. These are 
    obsolete as the RGB LEDs turn on when 5V power is 
    applied
-5. add FTDI chip to bottom of the board
-6. add vertical USB connector
-7. double check all capacitors and remove redundancies
-8. is 12V connection really needed? Is Host-device power 
-   enough? (possibly remove connector and 7805)
-9. order different 16MHz oscillator with correct capacitor 
-   values. Attempt to find the Arduino Pro Mini oscillator 
-   or the Uno oscillator.
 
-
-
-change order for TopPCB_V01:
+  a. remove 6 pin FTDI header
+  b. add FTDI chip and connections to schematic
