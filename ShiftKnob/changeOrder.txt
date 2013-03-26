@@ -8,14 +8,14 @@ change order for BottomPCB_V01:
 
 6. add vertical USB connector to FTDI chip - ADDED TO SCHEMATIC
 
-7. double check all capacitors and remove redundancies
+7. double check all capacitor locations and values and remove redundancies
 
 8. is 12V connection really needed? Is Host-device power 
    enough? (possibly remove connector and 7805)
 
 9. use right-angle RGB LEDs rather than surface mount ones -
    this will better shine light to the outside of the shift knob
-   housing
+   housing - ADDED TO SCHEMATIC
    
 change order for TopPCB_V01:
 NONE
