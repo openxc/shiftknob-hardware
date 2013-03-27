@@ -6543,12 +6543,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="5V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="LED">
 <wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
@@ -7159,18 +7153,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V">
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED" prefix="LED" uservalue="yes">
 <description>&lt;b&gt;LEDs&lt;/b&gt;
 Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LEDs. 5mm - Spark Fun Electronics SKU : COM-00529 (and others)</description>
@@ -7633,6 +7615,7 @@ Based on the following sources:
 <rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
 <rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
 <rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
+<wire x1="-0.762" y1="1.016" x2="-0.762" y2="-1.016" width="0.3048" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -10710,7 +10693,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="U$3" library="SparkFun" deviceset="OSHW-LOGO" device="S"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="-JST-2MM-SMT" value="12V Battery Connection">
+<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="-JST-2MM-SMT" value="12V Vehicle Connection">
 <attribute name="PROD_ID" value="CONN-08352"/>
 </part>
 <part name="LED2" library="FORD_frames" deviceset="LED-RGB" device=""/>
@@ -10748,8 +10731,6 @@ Source: RS Component / Phycomp</description>
 <part name="R14" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED6" library="SparkFun" deviceset="LED" device="0603" value="Red"/>
 <part name="LED7" library="SparkFun" deviceset="LED" device="0603" value="Green"/>
-<part name="U$7" library="SparkFun" deviceset="5V" device=""/>
-<part name="U$8" library="SparkFun" deviceset="5V" device=""/>
 <part name="C10" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
@@ -10768,6 +10749,9 @@ Source: RS Component / Phycomp</description>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
 <part name="C4" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="P+3" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
+<part name="P+4" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
+<part name="P+5" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 </parts>
 <sheets>
 <sheet>
@@ -10777,11 +10761,11 @@ Source: RS Component / Phycomp</description>
 znelson1@ford.com</text>
 <text x="10.16" y="16.51" size="1.778" layer="95">Original Arduino Mini Design by Team Arduino</text>
 <text x="10.16" y="13.97" size="1.778" layer="95">Arduino Pro Mini Design by Spark Fun Electronics</text>
-<text x="119.38" y="231.14" size="1.778" layer="97">Max Current Output: 1A</text>
-<text x="119.38" y="233.68" size="1.778" layer="97">VCC = 5V Output</text>
-<text x="119.38" y="228.6" size="1.778" layer="97">Part#: MC7805BDTRKG</text>
-<text x="107.95" y="270.51" size="3.81" layer="97">Power Regulation</text>
-<text x="195.58" y="201.93" size="3.81" layer="97">I/O Connection</text>
+<text x="109.22" y="160.02" size="1.778" layer="97">Max Current Output: 1A</text>
+<text x="109.22" y="162.56" size="1.778" layer="97">VCC = 5V Output</text>
+<text x="109.22" y="157.48" size="1.778" layer="97">Part#: MC7805BDTRKG</text>
+<text x="107.95" y="199.39" size="3.81" layer="97">Power Regulation</text>
+<text x="200.66" y="204.47" size="3.81" layer="97">I/O Connection</text>
 <text x="49.53" y="201.93" size="3.81" layer="97">Motor and 12V</text>
 <text x="60.96" y="137.16" size="3.81" layer="97">Atemga328</text>
 <text x="8.89" y="195.58" size="3.81" layer="97">Connection
@@ -10835,9 +10819,9 @@ Implemented with the OpenXC platform.</text>
 <instance part="JP3" gate="G$1" x="57.15" y="185.42"/>
 <instance part="LED2" gate="G$1" x="204.47" y="100.33" rot="R270"/>
 <instance part="LED3" gate="G$1" x="232.41" y="100.33" rot="R270"/>
-<instance part="VCC" gate="G$1" x="152.4" y="259.08"/>
-<instance part="IC2" gate="G$1" x="127" y="256.54"/>
-<instance part="GND2" gate="1" x="127" y="241.3"/>
+<instance part="VCC" gate="G$1" x="132.08" y="187.96"/>
+<instance part="IC2" gate="G$1" x="116.84" y="185.42"/>
+<instance part="GND2" gate="1" x="116.84" y="170.18"/>
 <instance part="C5" gate="G$1" x="22.86" y="54.61"/>
 <instance part="C6" gate="G$1" x="12.7" y="57.15"/>
 <instance part="GND9" gate="1" x="12.7" y="46.99"/>
@@ -10866,12 +10850,12 @@ Implemented with the OpenXC platform.</text>
 <instance part="GND12" gate="1" x="163.83" y="67.31"/>
 <instance part="GND13" gate="1" x="179.07" y="52.07"/>
 <instance part="GND14" gate="1" x="194.31" y="36.83"/>
-<instance part="D2" gate="G$1" x="173.99" y="254" smashed="yes" rot="MR0">
-<attribute name="NAME" x="171.45" y="254.4826" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="180.34" y="249.1486" size="1.778" layer="96" rot="MR0"/>
+<instance part="D2" gate="G$1" x="153.67" y="182.88" smashed="yes" rot="MR0">
+<attribute name="NAME" x="151.13" y="183.3626" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="160.02" y="178.0286" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="VUSB" gate="1" x="181.61" y="259.08" rot="MR0"/>
-<instance part="VCC4" gate="G$1" x="163.83" y="259.08" rot="MR0"/>
+<instance part="VUSB" gate="1" x="161.29" y="187.96" rot="MR0"/>
+<instance part="VCC4" gate="G$1" x="143.51" y="187.96" rot="MR0"/>
 <instance part="GND8" gate="1" x="161.29" y="124.46"/>
 <instance part="VCC1" gate="G$1" x="172.72" y="91.44"/>
 <instance part="J1" gate="G$1" x="123.19" y="52.07" smashed="yes">
@@ -10882,19 +10866,17 @@ Implemented with the OpenXC platform.</text>
 <attribute name="VALUE" x="132.334" y="61.976" size="1.778" layer="96"/>
 </instance>
 <instance part="GND15" gate="1" x="138.43" y="43.18"/>
-<instance part="U3" gate="G$1" x="222.25" y="176.53"/>
-<instance part="U$6" gate="G$1" x="165.1" y="190.5" rot="R180"/>
-<instance part="GND20" gate="1" x="204.47" y="156.21"/>
-<instance part="R13" gate="G$1" x="251.46" y="181.61" rot="R90"/>
-<instance part="R14" gate="G$1" x="261.62" y="181.61" rot="R90"/>
-<instance part="LED6" gate="G$1" x="251.46" y="171.45"/>
-<instance part="LED7" gate="G$1" x="261.62" y="171.45"/>
-<instance part="U$7" gate="G$1" x="251.46" y="189.23"/>
-<instance part="U$8" gate="G$1" x="261.62" y="189.23"/>
-<instance part="C10" gate="G$1" x="193.04" y="172.72"/>
-<instance part="GND21" gate="1" x="181.61" y="156.21"/>
-<instance part="GND11" gate="1" x="175.26" y="180.34"/>
-<instance part="GND16" gate="1" x="193.04" y="156.21"/>
+<instance part="U3" gate="G$1" x="227.33" y="179.07"/>
+<instance part="U$6" gate="G$1" x="172.72" y="193.04" rot="R180"/>
+<instance part="GND20" gate="1" x="209.55" y="158.75"/>
+<instance part="R13" gate="G$1" x="256.54" y="184.15" rot="R90"/>
+<instance part="R14" gate="G$1" x="266.7" y="184.15" rot="R90"/>
+<instance part="LED6" gate="G$1" x="256.54" y="173.99"/>
+<instance part="LED7" gate="G$1" x="266.7" y="173.99"/>
+<instance part="C10" gate="G$1" x="200.66" y="175.26"/>
+<instance part="GND21" gate="1" x="189.23" y="158.75"/>
+<instance part="GND11" gate="1" x="182.88" y="182.88"/>
+<instance part="GND16" gate="1" x="200.66" y="158.75"/>
 <instance part="RN1" gate="A" x="196.85" y="77.47" rot="R90"/>
 <instance part="RN1" gate="B" x="224.79" y="77.47" rot="R90"/>
 <instance part="RN1" gate="C" x="252.73" y="77.47" rot="R90"/>
@@ -10907,10 +10889,13 @@ Implemented with the OpenXC platform.</text>
 <instance part="RN3" gate="B" x="232.41" y="80.01" rot="R90"/>
 <instance part="RN3" gate="C" x="260.35" y="80.01" rot="R90"/>
 <instance part="RN3" gate="D" x="264.16" y="133.35"/>
-<instance part="C4" gate="G$1" x="181.61" y="172.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="182.626" y="172.847" size="1.778" layer="95"/>
-<attribute name="VALUE" x="182.626" y="168.021" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="189.23" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="190.246" y="175.387" size="1.778" layer="95"/>
+<attribute name="VALUE" x="190.246" y="170.561" size="1.778" layer="96"/>
 </instance>
+<instance part="P+3" gate="G$1" x="204.47" y="115.57"/>
+<instance part="P+4" gate="G$1" x="232.41" y="115.57"/>
+<instance part="P+5" gate="G$1" x="260.35" y="115.57"/>
 </instances>
 <busses>
 </busses>
@@ -10980,14 +10965,14 @@ Implemented with the OpenXC platform.</text>
 <label x="69.85" y="187.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="127" y1="248.92" x2="127" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="177.8" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND@1"/>
-<wire x1="127" y1="246.38" x2="127" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="248.92" x2="129.54" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="246.38" x2="127" y2="246.38" width="0.1524" layer="91"/>
-<junction x="127" y="246.38"/>
+<wire x1="116.84" y1="175.26" x2="116.84" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="177.8" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="175.26" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
+<junction x="116.84" y="175.26"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="49.53" x2="12.7" y2="52.07" width="0.1524" layer="91"/>
@@ -11027,40 +11012,40 @@ Implemented with the OpenXC platform.</text>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="TEST"/>
-<wire x1="207.01" y1="171.45" x2="204.47" y2="171.45" width="0.1524" layer="91"/>
-<wire x1="204.47" y1="171.45" x2="204.47" y2="168.91" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="173.99" x2="209.55" y2="173.99" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="173.99" x2="209.55" y2="171.45" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="AGND"/>
-<wire x1="204.47" y1="168.91" x2="204.47" y2="166.37" width="0.1524" layer="91"/>
-<wire x1="204.47" y1="166.37" x2="204.47" y2="163.83" width="0.1524" layer="91"/>
-<wire x1="204.47" y1="163.83" x2="204.47" y2="161.29" width="0.1524" layer="91"/>
-<wire x1="204.47" y1="161.29" x2="204.47" y2="158.75" width="0.1524" layer="91"/>
-<wire x1="207.01" y1="168.91" x2="204.47" y2="168.91" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="171.45" x2="209.55" y2="168.91" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="168.91" x2="209.55" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="166.37" x2="209.55" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="163.83" x2="209.55" y2="161.29" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="171.45" x2="209.55" y2="171.45" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GND1"/>
-<wire x1="207.01" y1="166.37" x2="204.47" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="168.91" x2="209.55" y2="168.91" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GND2"/>
-<wire x1="207.01" y1="163.83" x2="204.47" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="166.37" x2="209.55" y2="166.37" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GND3"/>
-<wire x1="207.01" y1="161.29" x2="204.47" y2="161.29" width="0.1524" layer="91"/>
-<junction x="204.47" y="161.29"/>
-<junction x="204.47" y="163.83"/>
-<junction x="204.47" y="166.37"/>
-<junction x="204.47" y="168.91"/>
+<wire x1="212.09" y1="163.83" x2="209.55" y2="163.83" width="0.1524" layer="91"/>
+<junction x="209.55" y="163.83"/>
+<junction x="209.55" y="166.37"/>
+<junction x="209.55" y="168.91"/>
+<junction x="209.55" y="171.45"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="181.61" y1="167.64" x2="181.61" y2="158.75" width="0.1524" layer="91"/>
+<wire x1="189.23" y1="170.18" x2="189.23" y2="161.29" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="170.18" y1="194.31" x2="175.26" y2="194.31" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="194.31" x2="175.26" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="196.85" x2="182.88" y2="196.85" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="196.85" x2="182.88" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="-"/>
-<wire x1="193.04" y1="167.64" x2="193.04" y2="158.75" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="170.18" x2="200.66" y2="161.29" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -11102,29 +11087,14 @@ Implemented with the OpenXC platform.</text>
 </segment>
 <segment>
 <pinref part="VCC" gate="G$1" pin="3.3V"/>
-<wire x1="137.16" y1="256.54" x2="152.4" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="256.54" x2="152.4" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="127" y1="185.42" x2="132.08" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="185.42" x2="132.08" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="VO"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="204.47" y1="115.57" x2="204.47" y2="114.3" width="0.1524" layer="91"/>
-<label x="204.47" y="115.57" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="232.41" y1="115.57" x2="232.41" y2="114.3" width="0.1524" layer="91"/>
-<label x="232.41" y="115.57" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="260.35" y1="115.57" x2="260.35" y2="114.3" width="0.1524" layer="91"/>
-<label x="260.35" y="115.57" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="171.45" y1="254" x2="163.83" y2="254" width="0.1524" layer="91"/>
-<wire x1="163.83" y1="254" x2="163.83" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="182.88" x2="143.51" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="143.51" y1="182.88" x2="143.51" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="VCC4" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -11212,21 +11182,22 @@ Implemented with the OpenXC platform.</text>
 <pinref part="U1" gate="G$1" pin="PD1(TXD)"/>
 </segment>
 <segment>
-<wire x1="237.49" y1="189.23" x2="242.57" y2="189.23" width="0.1524" layer="91"/>
-<label x="238.76" y="189.23" size="1.778" layer="95"/>
+<wire x1="242.57" y1="191.77" x2="247.65" y2="191.77" width="0.1524" layer="91"/>
+<label x="243.84" y="191.77" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="TXD"/>
 </segment>
 </net>
-<net name="RAW" class="1">
+<net name="12V" class="1">
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <wire x1="64.77" y1="185.42" x2="72.39" y2="185.42" width="0.1524" layer="91"/>
 <label x="69.85" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="104.14" y="256.54" size="1.778" layer="95"/>
+<label x="101.6" y="185.42" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="VI"/>
-<wire x1="119.38" y1="256.54" x2="104.14" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="185.42" x2="104.14" y2="185.42" width="0.1524" layer="91"/>
+<label x="101.6" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -11407,8 +11378,8 @@ Implemented with the OpenXC platform.</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="237.49" y1="176.53" x2="242.57" y2="176.53" width="0.1524" layer="91"/>
-<label x="238.76" y="176.53" size="1.778" layer="95"/>
+<wire x1="242.57" y1="179.07" x2="247.65" y2="179.07" width="0.1524" layer="91"/>
+<label x="243.84" y="179.07" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="DTR"/>
 </segment>
 </net>
@@ -11419,8 +11390,8 @@ Implemented with the OpenXC platform.</text>
 <pinref part="U1" gate="G$1" pin="PD0(RXD)"/>
 </segment>
 <segment>
-<wire x1="237.49" y1="186.69" x2="242.57" y2="186.69" width="0.1524" layer="91"/>
-<label x="238.76" y="186.69" size="1.778" layer="95"/>
+<wire x1="242.57" y1="189.23" x2="247.65" y2="189.23" width="0.1524" layer="91"/>
+<label x="243.84" y="189.23" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="RXD"/>
 </segment>
 </net>
@@ -11548,28 +11519,35 @@ Implemented with the OpenXC platform.</text>
 <net name="VUSB" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="176.53" y1="254" x2="181.61" y2="254" width="0.1524" layer="91"/>
-<wire x1="181.61" y1="254" x2="181.61" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="182.88" x2="161.29" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="182.88" x2="161.29" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="VUSB" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="175.26" x2="193.04" y2="191.77" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="177.8" x2="200.66" y2="194.31" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="+"/>
 <pinref part="U$6" gate="G$1" pin="VBUS"/>
-<wire x1="170.18" y1="191.77" x2="181.61" y2="191.77" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="194.31" x2="189.23" y2="194.31" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VCC"/>
-<wire x1="181.61" y1="191.77" x2="193.04" y2="191.77" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="191.77" x2="200.66" y2="191.77" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="191.77" x2="200.66" y2="181.61" width="0.1524" layer="91"/>
+<wire x1="189.23" y1="194.31" x2="200.66" y2="194.31" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="194.31" x2="208.28" y2="194.31" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="194.31" x2="208.28" y2="184.15" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VCCIO"/>
-<wire x1="200.66" y1="181.61" x2="207.01" y2="181.61" width="0.1524" layer="91"/>
-<wire x1="207.01" y1="176.53" x2="200.66" y2="176.53" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="176.53" x2="200.66" y2="181.61" width="0.1524" layer="91"/>
-<wire x1="181.61" y1="175.26" x2="181.61" y2="191.77" width="0.1524" layer="91"/>
-<junction x="181.61" y="191.77"/>
-<junction x="193.04" y="191.77"/>
-<junction x="200.66" y="181.61"/>
+<wire x1="208.28" y1="184.15" x2="212.09" y2="184.15" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="179.07" x2="208.28" y2="179.07" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="179.07" x2="208.28" y2="184.15" width="0.1524" layer="91"/>
+<wire x1="189.23" y1="177.8" x2="189.23" y2="194.31" width="0.1524" layer="91"/>
+<junction x="189.23" y="194.31"/>
+<junction x="200.66" y="194.31"/>
+<junction x="208.28" y="184.15"/>
 <pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="194.31" x2="200.66" y2="199.39" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="199.39" x2="256.54" y2="199.39" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="256.54" y1="199.39" x2="256.54" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="256.54" y1="199.39" x2="266.7" y2="199.39" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="199.39" x2="266.7" y2="189.23" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR-" class="0">
@@ -11593,65 +11571,72 @@ Implemented with the OpenXC platform.</text>
 <segment>
 <wire x1="3.81" y1="151.13" x2="45.72" y2="151.13" width="0.1524" layer="91" style="longdash"/>
 <wire x1="45.72" y1="151.13" x2="97.79" y2="151.13" width="0.1524" layer="91" style="longdash"/>
-<wire x1="97.79" y1="151.13" x2="275.59" y2="151.13" width="0.1524" layer="91" style="longdash"/>
+<wire x1="97.79" y1="151.13" x2="166.37" y2="151.13" width="0.1524" layer="91" style="longdash"/>
+<wire x1="166.37" y1="151.13" x2="275.59" y2="151.13" width="0.1524" layer="91" style="longdash"/>
 <wire x1="97.79" y1="151.13" x2="97.79" y2="212.09" width="0.1524" layer="91" style="longdash"/>
 <wire x1="45.72" y1="151.13" x2="45.72" y2="212.09" width="0.1524" layer="91" style="longdash"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<wire x1="251.46" y1="189.23" x2="251.46" y2="186.69" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="U$7" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<wire x1="261.62" y1="189.23" x2="261.62" y2="186.69" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="G$1" pin="5V"/>
+<wire x1="166.37" y1="151.13" x2="166.37" y2="212.09" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="D+"/>
-<wire x1="170.18" y1="186.69" x2="207.01" y2="186.69" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="189.23" x2="212.09" y2="189.23" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDP"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="D-"/>
-<wire x1="170.18" y1="189.23" x2="207.01" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="191.77" x2="212.09" y2="191.77" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDM"/>
 </segment>
 </net>
 <net name="TXLED1" class="0">
 <segment>
-<wire x1="237.49" y1="163.83" x2="251.46" y2="163.83" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="163.83" x2="251.46" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="242.57" y1="166.37" x2="256.54" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="166.37" x2="256.54" y2="168.91" width="0.1524" layer="91"/>
 <pinref part="LED6" gate="G$1" pin="C"/>
 <pinref part="U3" gate="G$1" pin="TXLED"/>
 </segment>
 </net>
 <net name="RXLED1" class="0">
 <segment>
-<wire x1="237.49" y1="161.29" x2="261.62" y2="161.29" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="161.29" x2="261.62" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="242.57" y1="163.83" x2="266.7" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="163.83" x2="266.7" y2="168.91" width="0.1524" layer="91"/>
 <pinref part="LED7" gate="G$1" pin="C"/>
 <pinref part="U3" gate="G$1" pin="RXLED"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<wire x1="251.46" y1="176.53" x2="251.46" y2="173.99" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="179.07" x2="256.54" y2="176.53" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="LED6" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<wire x1="261.62" y1="176.53" x2="261.62" y2="173.99" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="179.07" x2="266.7" y2="176.53" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="LED7" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="204.47" y1="115.57" x2="204.47" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="232.41" y1="115.57" x2="232.41" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="260.35" y1="115.57" x2="260.35" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 </nets>
