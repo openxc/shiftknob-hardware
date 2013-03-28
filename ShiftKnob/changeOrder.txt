@@ -17,6 +17,11 @@ change order for BottomPCB_V01:
    this will better shine light to the outside of the shift knob
    housing - ADDED TO SCHEMATIC
    
+10. move RGB LEDs to the 6 o'clock, 2 o'clock, and 10 o'clock posistions
+
+11. make center button a right angle button at the front of the shift knob.
+- ADDED TO SCHEMATIC
+   
 change order for TopPCB_V01:
 NONE
 
