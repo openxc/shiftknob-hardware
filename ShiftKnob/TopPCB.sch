@@ -3680,8 +3680,8 @@ of every OpenXC Ford schematic and layout. It automatically updates the last dat
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="ARRAY1" library="resistor-array" deviceset="744-8" device="" value="220"/>
 <part name="ARRAY2" library="resistor-array" deviceset="744-8" device="" value="220"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
+<part name="UPPER" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
+<part name="LOWER" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -3706,8 +3706,8 @@ TopPCB</text>
 <instance part="GND4" gate="1" x="105.41" y="93.98"/>
 <instance part="ARRAY1" gate="G$1" x="186.69" y="116.84"/>
 <instance part="ARRAY2" gate="G$1" x="186.69" y="96.52"/>
-<instance part="JP2" gate="G$1" x="35.56" y="71.12"/>
-<instance part="JP3" gate="G$1" x="35.56" y="50.8"/>
+<instance part="UPPER" gate="G$1" x="35.56" y="101.6"/>
+<instance part="LOWER" gate="G$1" x="35.56" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -3719,9 +3719,9 @@ TopPCB</text>
 <label x="214.63" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
-<label x="45.72" y="71.12" size="1.778" layer="95"/>
+<pinref part="UPPER" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
+<label x="45.72" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3735,19 +3735,19 @@ TopPCB</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="40.64" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
-<label x="45.72" y="73.66" size="1.778" layer="95"/>
+<pinref part="UPPER" gate="G$1" pin="3"/>
+<wire x1="40.64" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
+<label x="45.72" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
-<label x="45.72" y="68.58" size="1.778" layer="95"/>
+<pinref part="UPPER" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
+<label x="45.72" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-<label x="45.72" y="48.26" size="1.778" layer="95"/>
+<pinref part="LOWER" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<label x="45.72" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RCK" class="0">
@@ -3762,9 +3762,9 @@ TopPCB</text>
 <junction x="105.41" y="104.14"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="40.64" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
-<label x="45.72" y="53.34" size="1.778" layer="95"/>
+<pinref part="LOWER" gate="G$1" pin="3"/>
+<wire x1="40.64" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
+<label x="45.72" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -3776,9 +3776,9 @@ TopPCB</text>
 <wire x1="114.3" y1="96.52" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="4"/>
-<wire x1="40.64" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
-<label x="45.72" y="55.88" size="1.778" layer="95"/>
+<pinref part="LOWER" gate="G$1" pin="4"/>
+<wire x1="40.64" y1="86.36" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
+<label x="45.72" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SERIAL" class="0">
@@ -3790,9 +3790,9 @@ TopPCB</text>
 <wire x1="116.84" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<label x="45.72" y="50.8" size="1.778" layer="95"/>
+<pinref part="LOWER" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
+<label x="45.72" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3929,9 +3929,9 @@ TopPCB</text>
 <label x="115.57" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="4"/>
-<wire x1="40.64" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<label x="45.72" y="76.2" size="1.778" layer="95"/>
+<pinref part="UPPER" gate="G$1" pin="4"/>
+<wire x1="40.64" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<label x="45.72" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -3960,6 +3960,9 @@ TopPCB</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="205,1,134.62,102.934,SHIFT1P,VCC,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
