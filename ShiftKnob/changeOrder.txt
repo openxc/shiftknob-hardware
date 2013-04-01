@@ -21,11 +21,16 @@ change order for BottomPCB_V01:
 
 11. make center button a right angle button at the front of the shift knob.
 - ADDED TO SCHEMATIC
+
+12. add holes for screws 
    
 change order for TopPCB_V01:
-NONE
 
-
+1. add through holes for screws - DONE
+2. rework silk screen with new dates - DONE
+3. move entire PCB to be centered at (0.85,0.85) - DONE
+4. move C1 to allow space for holes - DONE
+5. change 6 pin connector to (2) 4 pin connectors - DONE
 
 Completed Changes:
 
