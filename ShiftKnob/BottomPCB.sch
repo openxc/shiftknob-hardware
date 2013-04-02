@@ -7239,10 +7239,10 @@ Digikey Part Number: 732-2735-ND
 <rectangle x1="-3" y1="2.05" x2="-1.55" y2="3.1" layer="1"/>
 <rectangle x1="2.9" y1="0.45" x2="3.5" y2="1.25" layer="1"/>
 <rectangle x1="-3.5" y1="0.45" x2="-2.9" y2="1.25" layer="1"/>
-<smd name="P$1" x="-2.3" y="2.6" dx="1.27" dy="0.635" layer="1"/>
-<smd name="P$2" x="2.3" y="2.6" dx="1.27" dy="0.635" layer="1"/>
-<smd name="P1" x="-3.2" y="0.9" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="P2" x="3.2" y="0.9" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="P1" x="-2.3" y="2.6" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P2" x="2.3" y="2.6" dx="1.27" dy="0.635" layer="1"/>
+<smd name="NC1" x="-3.2" y="0.9" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="NC2" x="3.2" y="0.9" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
 <wire x1="-3.9" y1="1.5" x2="-3.9" y2="0.4" width="0.127" layer="21"/>
 <text x="-2.8" y="3.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.6" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
@@ -10277,8 +10277,8 @@ Source: RS Component / Phycomp</description>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="FT232RL-BASIC" device="SSOP"/>
 <part name="U$6" library="FORD_frames" deviceset="USB-MINI-B_VERTICAL" device=""/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
-<part name="R13" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
-<part name="R14" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
+<part name="R13" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
+<part name="R14" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="LED6" library="SparkFun" deviceset="LED" device="0603" value="Red"/>
 <part name="LED7" library="SparkFun" deviceset="LED" device="0603" value="Green"/>
 <part name="C10" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
