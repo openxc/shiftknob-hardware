@@ -8,4 +8,4 @@ bin
 gen
 */.classpath
 *.pro
-
+*.epf
