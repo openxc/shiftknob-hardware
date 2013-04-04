@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10442,8 +10442,8 @@ Implemented with the OpenXC platform.</text>
 <instance part="P+3" gate="G$1" x="204.47" y="115.57"/>
 <instance part="P+4" gate="G$1" x="232.41" y="115.57"/>
 <instance part="P+5" gate="G$1" x="260.35" y="115.57"/>
-<instance part="BUTTON" gate="G$1" x="138.43" y="113.03" smashed="yes" rot="R90">
-<attribute name="NAME" x="132.08" y="110.49" size="1.778" layer="95" rot="R90"/>
+<instance part="BUTTON" gate="G$1" x="138.43" y="113.03" smashed="yes" rot="R270">
+<attribute name="NAME" x="144.78" y="115.57" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="UPPER" gate="G$1" x="15.24" y="180.34"/>
 <instance part="LOWER" gate="G$1" x="15.24" y="160.02"/>
@@ -10465,11 +10465,6 @@ Implemented with the OpenXC platform.</text>
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<wire x1="138.43" y1="107.95" x2="138.43" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="BUTTON" gate="G$1" pin="1"/>
-</segment>
 <segment>
 <wire x1="33.02" y1="49.53" x2="33.02" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -10603,6 +10598,11 @@ Implemented with the OpenXC platform.</text>
 <pinref part="LOWER" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
 <label x="25.4" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="BUTTON" gate="G$1" pin="2"/>
+<wire x1="138.43" y1="101.6" x2="138.43" y2="107.95" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -10848,12 +10848,12 @@ Implemented with the OpenXC platform.</text>
 <net name="D2" class="0">
 <segment>
 <label x="101.6" y="101.6" size="1.778" layer="95"/>
-<wire x1="138.43" y1="121.92" x2="138.43" y2="118.11" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
 <wire x1="99.06" y1="101.6" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="101.6" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="121.92" x2="138.43" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="BUTTON" gate="G$1" pin="2"/>
+<pinref part="BUTTON" gate="G$1" pin="1"/>
+<wire x1="138.43" y1="118.11" x2="138.43" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D3" class="0">
