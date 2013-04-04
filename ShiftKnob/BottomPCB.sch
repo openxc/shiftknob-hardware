@@ -10243,9 +10243,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="U$3" library="SparkFun" deviceset="OSHW-LOGO" device="S"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="-JST-2MM-SMT" value="12V Vehicle Connection">
-<attribute name="PROD_ID" value="CONN-08352"/>
-</part>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="12V Vehicle Connection"/>
 <part name="LED2" library="FORD_frames" deviceset="LED-RGB" device=""/>
 <part name="LED3" library="FORD_frames" deviceset="LED-RGB" device=""/>
 <part name="VCC" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
