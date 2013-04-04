@@ -10676,6 +10676,21 @@ Implemented with the OpenXC platform.</text>
 <wire x1="20.32" y1="185.42" x2="30.48" y2="185.42" width="0.1524" layer="91"/>
 <label x="25.4" y="185.42" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="204.47" y1="115.57" x2="204.47" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="232.41" y1="115.57" x2="232.41" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="260.35" y1="115.57" x2="260.35" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="AREF" class="0">
 <segment>
@@ -11174,23 +11189,6 @@ Implemented with the OpenXC platform.</text>
 <wire x1="266.7" y1="179.07" x2="266.7" y2="176.53" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="LED7" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="204.47" y1="115.57" x2="204.47" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="232.41" y1="115.57" x2="232.41" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="P+4" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="260.35" y1="115.57" x2="260.35" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 </nets>
