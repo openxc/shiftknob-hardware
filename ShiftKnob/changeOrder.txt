@@ -1,5 +1,30 @@
 change order for BottomPCB_V01:
 
+   
+change order for TopPCB_V01:
+
+1. add through holes for screws - DONE
+2. rework silk screen with new dates - DONE
+3. move entire PCB to be centered at (0.85,0.85) - DONE
+4. move C1 to allow space for holes - DONE
+5. change 6 pin connector to (2) 4 pin connectors - DONE
+
+Completed Changes:
+
+2. silkscreen for motor diode is backwards
+
+3. 50ohm resistors on Red led of RGBs should be bumped 
+   up to 100ohm
+
+4. remove the power LED and resistor. These are 
+   obsolete as the RGB LEDs turn on when 5V power is 
+   applied
+
+  a. remove 6 pin FTDI header
+  b. add FTDI chip and connections to schematic
+
+
+
 1. add bootloader programming pins to be used with 
    ICSP programmer (6 pin ICSP header) - ADDED TO SCHEMATIC
 
@@ -23,25 +48,3 @@ change order for BottomPCB_V01:
 - ADDED TO SCHEMATIC
 
 12. add holes for screws 
-   
-change order for TopPCB_V01:
-
-1. add through holes for screws - DONE
-2. rework silk screen with new dates - DONE
-3. move entire PCB to be centered at (0.85,0.85) - DONE
-4. move C1 to allow space for holes - DONE
-5. change 6 pin connector to (2) 4 pin connectors - DONE
-
-Completed Changes:
-
-2. silkscreen for motor diode is backwards
-
-3. 50ohm resistors on Red led of RGBs should be bumped 
-   up to 100ohm
-
-4. remove the power LED and resistor. These are 
-   obsolete as the RGB LEDs turn on when 5V power is 
-   applied
-
-  a. remove 6 pin FTDI header
-  b. add FTDI chip and connections to schematic

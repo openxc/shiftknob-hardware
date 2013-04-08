@@ -10265,7 +10265,7 @@ Source: RS Component / Phycomp</description>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="FT232RL-BASIC" device="SSOP"/>
-<part name="U$6" library="FORD_frames" deviceset="USB-MINI-B_VERTICAL" device=""/>
+<part name="U6" library="FORD_frames" deviceset="USB-MINI-B_VERTICAL" device=""/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="R13" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="R14" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
@@ -10405,7 +10405,7 @@ Implemented with the OpenXC platform.</text>
 </instance>
 <instance part="GND15" gate="1" x="138.43" y="43.18"/>
 <instance part="U3" gate="G$1" x="227.33" y="179.07"/>
-<instance part="U$6" gate="G$1" x="172.72" y="193.04" rot="R180"/>
+<instance part="U6" gate="G$1" x="172.72" y="193.04" rot="R180"/>
 <instance part="GND20" gate="1" x="209.55" y="158.75"/>
 <instance part="R13" gate="G$1" x="256.54" y="184.15" rot="R90"/>
 <instance part="R14" gate="G$1" x="266.7" y="184.15" rot="R90"/>
@@ -10566,7 +10566,7 @@ Implemented with the OpenXC platform.</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="GND"/>
+<pinref part="U6" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="177.8" y1="196.85" x2="182.88" y2="196.85" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="196.85" x2="182.88" y2="185.42" width="0.1524" layer="91"/>
@@ -11037,7 +11037,7 @@ Implemented with the OpenXC platform.</text>
 <segment>
 <wire x1="200.66" y1="177.8" x2="200.66" y2="194.31" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="+"/>
-<pinref part="U$6" gate="G$1" pin="VBUS"/>
+<pinref part="U6" gate="G$1" pin="VBUS"/>
 <wire x1="177.8" y1="194.31" x2="189.23" y2="194.31" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VCC"/>
 <wire x1="189.23" y1="194.31" x2="200.66" y2="194.31" width="0.1524" layer="91"/>
@@ -11092,14 +11092,14 @@ Implemented with the OpenXC platform.</text>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="D+"/>
+<pinref part="U6" gate="G$1" pin="D+"/>
 <wire x1="177.8" y1="189.23" x2="212.09" y2="189.23" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDP"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="D-"/>
+<pinref part="U6" gate="G$1" pin="D-"/>
 <wire x1="177.8" y1="191.77" x2="212.09" y2="191.77" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDM"/>
 </segment>
