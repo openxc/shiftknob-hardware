@@ -4235,7 +4235,7 @@ Digikey Part Number: 732-2735-ND
 <wire x1="2" y1="-4.2" x2="2.6" y2="-4.2" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.2" x2="2.6" y2="4.3" width="0.127" layer="21"/>
 <wire x1="2.6" y1="4.3" x2="2.1" y2="4.3" width="0.127" layer="21"/>
-<text x="4.826" y="-2.032" size="1.778" layer="21" font="vector" rot="R90">USB</text>
+<text x="-2.794" y="-2.032" size="1.778" layer="21" font="vector" rot="R90">USB</text>
 </package>
 <package name="LED-RGB_SMD-RIGHTANGLE">
 <wire x1="-1.2" y1="0.65" x2="-0.8" y2="1" width="0.127" layer="21" curve="-90"/>
@@ -4666,7 +4666,7 @@ design rules under a new name.</description>
 <contactref element="UPPER" pad="4"/>
 <contactref element="LOWER" pad="1"/>
 <contactref element="BUTTON" pad="P2"/>
-<polygon width="0.205740625" layer="1" isolate="0.254">
+<polygon width="0.20828125" layer="1" isolate="0.254">
 <vertex x="2.54" y="21.59" curve="-90"/>
 <vertex x="21.59" y="40.64"/>
 <vertex x="21.844" y="40.64" curve="-90"/>
@@ -4674,7 +4674,7 @@ design rules under a new name.</description>
 <vertex x="40.64" y="21.59" curve="-90"/>
 <vertex x="21.59" y="2.54" curve="-90"/>
 </polygon>
-<polygon width="0.205740625" layer="16" isolate="0.254">
+<polygon width="0.20828125" layer="16" isolate="0.254">
 <vertex x="2.54" y="21.59" curve="-90"/>
 <vertex x="21.59" y="40.64"/>
 <vertex x="21.844" y="40.64" curve="-90"/>
@@ -5298,8 +5298,8 @@ design rules under a new name.</description>
 <wire x1="10.033" y1="22.606" x2="10.033" y2="19.05" width="0.3048" layer="16"/>
 <wire x1="10.033" y1="22.606" x2="11.176" y2="23.876" width="0.3048" layer="16"/>
 <via x="11.176" y="23.876" extent="1-16" drill="0.508"/>
-<wire x1="11.176" y1="23.876" x2="11.557" y2="25.146" width="0.3048" layer="1"/>
-<wire x1="11.557" y1="25.146" x2="11.938" y2="26.162" width="0.3048" layer="1"/>
+<wire x1="11.176" y1="23.876" x2="11.176" y2="25.4" width="0.3048" layer="1"/>
+<wire x1="11.176" y1="25.4" x2="11.938" y2="26.162" width="0.3048" layer="1"/>
 <via x="11.938" y="26.162" extent="1-16" drill="0.508"/>
 <wire x1="11.938" y1="26.162" x2="11.811" y2="26.416" width="0.3048" layer="16"/>
 <wire x1="11.811" y1="26.416" x2="11.811" y2="30.426" width="0.3048" layer="16"/>
