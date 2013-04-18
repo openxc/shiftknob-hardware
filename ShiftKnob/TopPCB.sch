@@ -3686,7 +3686,7 @@ of every OpenXC Ford schematic and layout. It automatically updates the last dat
 <sheets>
 <sheet>
 <plain>
-<text x="266.7" y="8.89" size="3.81" layer="94">01</text>
+<text x="266.7" y="8.89" size="3.81" layer="94">02</text>
 <text x="190.5" y="7.62" size="3.81" layer="94">Zachary Nelson
 znelson1@ford.com</text>
 <text x="182.88" y="48.26" size="2.54" layer="97">This is the Top PCB (1 of 2) for 
