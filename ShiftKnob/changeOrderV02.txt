@@ -1,0 +1,11 @@
+BottomPCB:
+
+1. TX/RX lines need to be switched
+2. Label each component: 1, 2, 3, etc and generate a corresponding BOM
+
+
+Big Changes:
+1. Use an Arduino Pro Mini on the board
+- minimize the number of connecting pins to allow more trace space.
+- place FTDI chip on bottom
+- will only need resistor arrays, MOSFETs, RGB LEDs, FTDI, ___
