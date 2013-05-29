@@ -10746,9 +10746,9 @@ Implemented with the OpenXC platform.</text>
 <pinref part="U1" gate="G$1" pin="PD1(TXD)"/>
 </segment>
 <segment>
-<wire x1="242.57" y1="191.77" x2="247.65" y2="191.77" width="0.1524" layer="91"/>
-<label x="243.84" y="191.77" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="TXD"/>
+<wire x1="242.57" y1="189.23" x2="247.65" y2="189.23" width="0.1524" layer="91"/>
+<label x="243.84" y="189.23" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="RXD"/>
 </segment>
 </net>
 <net name="12V" class="1">
@@ -10950,9 +10950,9 @@ Implemented with the OpenXC platform.</text>
 <pinref part="U1" gate="G$1" pin="PD0(RXD)"/>
 </segment>
 <segment>
-<wire x1="242.57" y1="189.23" x2="247.65" y2="189.23" width="0.1524" layer="91"/>
-<label x="243.84" y="189.23" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="RXD"/>
+<wire x1="242.57" y1="191.77" x2="247.65" y2="191.77" width="0.1524" layer="91"/>
+<label x="243.84" y="191.77" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="TXD"/>
 </segment>
 </net>
 <net name="A6" class="0">
