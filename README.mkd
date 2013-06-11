@@ -31,7 +31,7 @@ The core microcontroller is located on the Bottom PCB. The design is based off t
 * 7805 5V regulator (if you choose to power from the 12V vehicle power)
 * USB and header connectors
 
-(see the BOM_TopPCB for more details and Digikey part numbers)
+(see /docs/BOM_BottomPCB_v02.xls for more details and Digikey part numbers)
 
 #### Top PCB
 
@@ -42,7 +42,7 @@ The Top PCB holds the 7 segment display and 8-bit shift register. The control fo
 * [7-Segment display](https://www.sparkfun.com/products/9191)
 * 8-bit shift register (74HC595)
 
-(see the BOM_BottomPCB for more details and Digikey part numbers)
+(see /docs/BOM_TopPCB_v02.xls for more details and Digikey part numbers)
 
 ## Bootloader
 
