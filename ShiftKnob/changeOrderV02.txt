@@ -1,7 +1,5 @@
-BottomPCB:
-
-1. TX/RX lines need to be switched - DONE
-2. Label each component: 1, 2, 3, etc and generate a corresponding BOM
+Minor Changes:
+1. Label each component: 1, 2, 3, etc and generate a corresponding BOM
 
 
 Big Changes:
