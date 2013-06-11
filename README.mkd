@@ -54,18 +54,18 @@ an Arduino Uno, you can load the ArduinoISP sketch onto the Arduino board and fo
 
 This repository is one of 4 repositories listed below:
 
-**3D Design** - The [shiftknob-3Ddesign](www.github.com/openxc/shiftknob-3Ddesign) 
+**3D Design** - The [shiftknob-3Ddesign](http://github.com/openxc/shiftknob-3Ddesign) 
 repository contains .STL and STEP files for the 3D printable shift knob housings as well as documentation
 for creating your own physical shift knob design that works with the PCBs already designed.
 
-**Hardware** - The [shiftknob-hardware](www.github.com/openxc/shiftknob-hardware) 
+**Hardware** - The [shiftknob-hardware](http://github.com/openxc/shiftknob-hardware) 
 repository contains Eagle schematics and PCB layouts for the shift knob embedded hardware.
 
-**Firmware** - The [shiftknob-firmware](www.github.com/openxc/shiftknob-firmware) 
+**Firmware** - The [shiftknob-firmware](http://github.com/openxc/shiftknob-firmware) 
 repository contains Arduino source code to run on the embedded system as well as other firmware 
 versions for differing applications. 
 
-**Android** - The [shiftknob-android](www.github.com/openxc/shiftknob-android) 
+**Android** - The [shiftknob-android](http://github.com/openxc/shiftknob-android) 
 repository contains the Android application to run on the OpenXC host device. This app sends the
 appropriate signals to the Shift Knob embedded system.
 
