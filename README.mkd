@@ -17,7 +17,7 @@ The design intent of the Shift Knob hardware was to develop an embedded system t
 
 The Shift Knob PCBs were designed to be compact enough to fit within the physical constraints of a typical manual transmission [shift knob](https://github.com/openxc/shiftknob-3Ddesign). In order to provide enough space on the board, it was chosen to use circular PCBs with a diameter no greater than 38mm. The desired components could not easily fit on one PCB, so two PCBs were used to provide even more space and more flexibility. These two boards which are connected using two 4-pin headers have been cleverly named `TopPCB` and `BottomPCB`. Please refer to the [OpenXC Project Page] for pictures highlighting the design. Let's first take a look at the bottom PCB.
 
-# Bottom PCB 
+### Bottom PCB 
 
 The core microcontroller is located on the Bottom PCB. The design is based off the [Arduino Pro Mini] running at 5V with a 16MHz oscillator. The Atemga328 communicates over USB through an on-board FTDI chip. 
 
@@ -33,7 +33,7 @@ The core microcontroller is located on the Bottom PCB. The design is based off t
 
 (see the BOM_TopPCB for more details and Digikey part numbers)
 
-# Top PCB
+#### Top PCB
 
 The Top PCB holds the 7 segment display and 8-bit shift register. The control follows the principles of this [tutorial](http://blog.makezine.com/2013/02/10/how-shift-registers-work/). The Top PCB and Bottom PCB communicate via 2 separate 4-pin header connections for a total of 8 pins. These pins are used to transmit power, ground, data communication to the shift register and also brightness control for the 7 segment display. The brightness of the 7 segment display is modulated by a P-Channel MOSFET on the Bottom PCB which regulates a PWM signal going to the common annode of the LEDs.
 
@@ -69,13 +69,13 @@ versions for differing applications.
 repository contains the Android application to run on the OpenXC host device. This app sends the
 appropriate signals to the Shift Knob embedded system.
 
-### License
+## License
 
 The Android and firmware source code is available under the BSD open source
 license.
 
-The hardware schematics and enclosure design are available under the TAPR Open
-Hardware License.
+The hardware schematics and enclosure design are available under the 
+[Creative Commons Atribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US) license.
 
 [Arduino]: http://arduino.cc
 [Arduino Pro Mini]: http://arduino.cc/en/Main/ArduinoBoardProMini
