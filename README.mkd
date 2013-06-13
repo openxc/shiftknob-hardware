@@ -62,7 +62,7 @@ total of 8 pins. These pins are used to transmit power, ground, data
 communication to the shift register and also brightness control for the 7
 segment display. The brightness of the 7 segment display is modulated by a
 P-Channel MOSFET on the Bottom PCB which regulates a PWM signal going to the
-common annode of the LEDs.
+common anode of the LEDs.
 
 **Main Components:**
 
