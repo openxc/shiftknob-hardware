@@ -1,29 +1,29 @@
 OpenXC Shift Knob
 =================
 
-**ABOUT:** The Haptic Feedback Shift Knob is a manual transmission shift knob capable of sending haptic and 
-visual signals to the driver. Using a built in algorithm, the Shift Knob determines when the driver 
-should shift for best performance and then sends an appropriate haptic pulse through the driver's 
-hand signalling that he or she should shift. 
+**ABOUT:** The Haptic Feedback Shift Knob is a manual transmission shift knob capable of sending haptic and
+visual signals to the driver. Using a built in algorithm, the Shift Knob determines when the driver
+should shift for best performance and then sends an appropriate haptic pulse through the driver's
+hand signalling that he or she should shift.
 
 For more details on the complete project, visit the [OpenXC Shift Knob]
 (http://openxcplatform.com/projects/shift-knob.html) webpage.
 
 ## Design Intent
 
-The design intent of the Shift Knob hardware was to develop an embedded system that could receive input from a connected source and correctly energize a haptic feedback device (in this case a DC motor) based on the provided input. The PCBs were designed to easily fit within the physical constraints of a typical shift knob housing. In order to provide an open development platform and to allow future changes and new implementations, the hardware was based off the open source [Arduino] platform.  
+The design intent of the Shift Knob hardware was to develop an embedded system that could receive input from a connected source and correctly energize a haptic feedback device (in this case a DC motor) based on the provided input. The PCBs were designed to easily fit within the physical constraints of a typical shift knob housing. In order to provide an open development platform and to allow future changes and new implementations, the hardware was based off the open source [Arduino] platform.
 
 ## Layout
 
 The Shift Knob PCBs were designed to be compact enough to fit within the physical constraints of a typical manual transmission [shift knob](https://github.com/openxc/shiftknob-3Ddesign). In order to provide enough space on the board, it was chosen to use circular PCBs with a diameter no greater than 38mm. The desired components could not easily fit on one PCB, so two PCBs were used to provide even more space and more flexibility. These two boards which are connected using two 4-pin headers have been cleverly named `TopPCB` and `BottomPCB`. Please refer to the [OpenXC Project Page] for pictures highlighting the design. Let's first take a look at the bottom PCB.
 
-### Bottom PCB 
+### Bottom PCB
 
-The core microcontroller is located on the Bottom PCB. The design is based off the [Arduino Pro Mini] running at 5V with a 16MHz oscillator. The Atemga328 communicates over USB through an on-board FTDI chip. 
+The core microcontroller is located on the Bottom PCB. The design is based off the [Arduino Pro Mini] running at 5V with a 16MHz oscillator. The Atemga328 communicates over USB through an on-board FTDI chip.
 
 **Main Components:**
 
-* Atemega 328 (5V, 16MHz) 
+* Atemega 328 (5V, 16MHz)
 * FT232RL FTDI serial chip
 * 3 right angle RGB LEDs
 * MOSFETs (to control LEDs and haptic feedback motor)
@@ -46,36 +46,34 @@ The Top PCB holds the 7 segment display and 8-bit shift register. The control fo
 
 ## Bootloader
 
-The Arduino [bootloader] can be easily flashed onto the Atmega328 using the detailed instructions from 
-Arduino's website. There is a 2 by 3 pin header on the board to flash the bootloader over ISCP. If you have 
+The Arduino [bootloader] can be easily flashed onto the Atmega328 using the detailed instructions from
+Arduino's website. There is a 2 by 3 pin header on the board to flash the bootloader over ISCP. If you have
 an Arduino Uno, you can load the ArduinoISP sketch onto the Arduino board and follow the instructions [here][bootloader].
 
 ## Resources
 
 This repository is one of 4 repositories listed below:
 
-**3D Design** - The [shiftknob-3Ddesign](http://github.com/openxc/shiftknob-3Ddesign) 
+**3D Design** - The [shiftknob-3Ddesign](http://github.com/openxc/shiftknob-3Ddesign)
 repository contains .STL and STEP files for the 3D printable shift knob housings as well as documentation
 for creating your own physical shift knob design that works with the PCBs already designed.
 
-**Hardware** - The [shiftknob-hardware](http://github.com/openxc/shiftknob-hardware) 
+**Hardware** - The [shiftknob-hardware](http://github.com/openxc/shiftknob-hardware)
 repository contains Eagle schematics and PCB layouts for the shift knob embedded hardware.
 
-**Firmware** - The [shiftknob-firmware](http://github.com/openxc/shiftknob-firmware) 
-repository contains Arduino source code to run on the embedded system as well as other firmware 
-versions for differing applications. 
+**Firmware** - The [shiftknob-firmware](http://github.com/openxc/shiftknob-firmware)
+repository contains Arduino source code to run on the embedded system as well as other firmware
+versions for differing applications.
 
-**Android** - The [shiftknob-android](http://github.com/openxc/shiftknob-android) 
+**Android** - The [shiftknob-android](http://github.com/openxc/shiftknob-android)
 repository contains the Android application to run on the OpenXC host device. This app sends the
 appropriate signals to the Shift Knob embedded system.
 
 ## License
 
-The Android and firmware source code is available under the BSD open source
-license.
-
-The hardware schematics and enclosure design are available under the 
-[Creative Commons Atribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US) license.
+The schematics and design files in this repository are available under the
+[Creative Commons Atribution 3.0
+Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US) license.
 
 [Arduino]: http://arduino.cc
 [Arduino Pro Mini]: http://arduino.cc/en/Main/ArduinoBoardProMini
